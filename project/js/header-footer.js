@@ -1,16 +1,10 @@
 const loadHTMLToClassName = (classSelector, filePath) => {
-    fetch(filePath)
-        .then(res => {
-            if (!res.ok) throw new Error(`Khong tim that file : ${res.status}`);
-            return res.text();
-        }).then(html => {
-            document.querySelectorAll(classSelector).forEach(element => {
-                element.innerHTML = html;
-            });
-        }).catch(err => {
-            console.error('Load html fail: ', err);
-        })
-}
+    $(`${classSelector}`).load(filePath, (filePath, status, xhr) => {
+        if (status === "error") {
+            console.error(`Khong the load file ${filePath}: `, xhr.status, xhr.statusText)
+        }
+    });
+};
 
 loadHTMLToClassName(".header", "/other-pages/header.html");
 loadHTMLToClassName(".footer", "/other-pages/footer.html");
