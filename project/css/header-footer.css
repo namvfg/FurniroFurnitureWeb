@@ -1,0 +1,158 @@
+.header {
+    min-width: 1280px;
+    height: 100px;
+    flex-shrink: 0;
+    background-color: var(--primary);
+    padding: 29px 100px 30px 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logo__icon {
+    width: 50px;
+    height: 32px;
+}
+
+.logo__icon img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.navigators {
+    margin-left: 100px;
+}
+
+.navigators__list {
+    list-style: none;
+    display: flex;
+    gap: 75px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tools__list {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+
+.tools__item {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    background: var(--primary);
+}
+
+.tools__item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    min-width: 1280px;
+    height: 505px;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+    padding: 0px 100px;
+
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0px;
+    border-bottom: 1px solid var(--color-gray-3);
+}
+
+.address__title {
+    color: var(--secondary);
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.address__paragraph {
+    width: 285px;
+    color: var(--color-gray-2);
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-info {
+    display: flex;
+    gap: 72px;
+}
+
+.links,
+.help {
+    width: 140px;
+}
+
+.newsletter {
+    margin-right: 105px;
+}
+
+.footer-info__title {
+    color: var(--color-gray-2);
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 55px;
+}
+
+.footer-info__options__list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 46px;
+}
+
+.newsletter__form {
+    display: flex;
+    gap: 11px;
+}
+
+.newsletter__form__input {
+    border: none;
+    border-bottom: 1px solid var(--secondary);
+    width: 200px;
+    padding: 3px;
+}
+
+.newsletter__form__input::placeholder {
+    color: var(--color-gray-2);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.newsletter__form__button {
+    width: 80px;
+    font-weight: 500;
+    line-height: normal;
+    background-color: var(--primary);
+    border: none;
+    border-bottom: 1px solid var(--secondary);
+    text-align: center;
+}
+
+.footer-bottom {
+    padding: 35px 0px 38px;
+    font-weight: 400;
+    line-height: normal;
+}
