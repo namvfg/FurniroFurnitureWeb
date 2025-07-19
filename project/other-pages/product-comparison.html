@@ -19,6 +19,9 @@
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/header-footer.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/footer-banner.css">
+    <link rel="stylesheet" href="/css/production-comparison.css">
 
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -28,9 +31,487 @@
 <body>
     <div class="container">
         <header class="header"></header>
-        <main>
+        <div class="banner">
+            <div class="banner_background">
+            </div>
+            <div class="banner__content">
+                <div class="banner__content__logo">
+                    <img src="/images/banner-icon.png" alt="logo">
+                </div>
+                <div class="banner__content__name font-48px">
+                    <p>Product Comparison</p>
+                </div>
+                <div class="banner__content__link font-16px">
+                    <p class="banner__content__link__home">Home</p>
+                    <img src="/images/dashicons_arrow-down-alt2.svg" alt="right-arrow">
+                    <p class="banner__content__link__other">Comparison</p>
+                </div>
+            </div>
+        </div>
+        <main class="main-content">
+            <div class="top-content">
+                <div class="first-col">
+                    <div class="more-products">
+                        <p class="more-products__title font-28px">Go to Product page for more Products</p>
+                        <p class="more-products__link font-20px">View More</p>
+                    </div>
+                </div>
+                <div class="product-col">
+                    <div class="product">
+                        <div class="product__image">
+                            <img src="/images/compare-prod-2.png" alt="compare-prod-2">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info__name font-24px">
+                                <p>Asgaard Sofa</p>
+                            </div>
+                            <div class="product__info__price font-18px">
+                                <p>Rs. 250,000.00</p>
+                            </div>
+                            <div class="product__info__rate">
+                                <div class="product__info__rate__star-num font-18px">
+                                    <p>4.7</p>
+                                </div>
+                                <div class="product__info__rate__star__pattern">
+                                    <ul class="star-list">
+                                        <li class="star-item"><img src="/images/dashicons_star-filled.svg" alt="star">
+                                        </li>
+                                        <li class="star-item"><img src="/images/dashicons_star-filled.svg" alt="star">
+                                        </li>
+                                        <li class="star-item"><img src="/images/dashicons_star-filled.svg" alt="star">
+                                        </li>
+                                        <li class="star-item"><img src="/images/dashicons_star-filled.svg" alt="star">
+                                        </li>
+                                        <li class="star-item"><img src="/images/carbon_star-half.svg" alt="star-half">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__info__rate__review-num font-13px">
+                                    <p>204 Review</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-col">
+                    <div class="product">
+                        <div class="product__image">
+                            <img src="/images/compare-prod-1.png" alt="compare-prod-1">
+                        </div>
+                        <div class="product__info">
+                            <div class="product__info__name font-24px">
+                                <p>Outdoor Sofa Set</p>
+                            </div>
+                            <div class="product__info__price font-18px">
+                                <p>Rs. 224,000.00</p>
+                            </div>
+                            <div class="product__info__rate">
+                                <div class="product__info__rate__star-num font-18px">
+                                    <p>4.2</p>
+                                </div>
+                                <div class="product__info__rate__star__pattern">
+                                    <ul class="star-list">
+                                        <li class="star-item"><img src="/images/dashicons_star-filled.svg" alt="star">
+                                        </li>
+                                        <li class="star-item"><img src="/images/dashicons_star-filled.svg" alt="star">
+                                        </li>
+                                        <li class="star-item"><img src="/images/dashicons_star-filled.svg" alt="star">
+                                        </li>
+                                        <li class="star-item"><img src="/images/dashicons_star-filled.svg" alt="star">
+                                        </li>
+                                        <li class="star-item"><img src="/images/carbon_star-half.svg" alt="star-half">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__info__rate__review-num font-13px">
+                                    <p>145 Review</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-col">
+                    <div class="add__title font-24px">
+                        <p>Add A Product</p>
+                    </div>
+                    <div class="add__button font-14px">
+                        <button>
+                            <div class="add__button__content">
+                                <p>Choose a Product</p>
+                                <img src="/images/drop-down.svg" alt="drop-down">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-content">
+                <table class="bottom-content__table">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
 
+                    <!-- General section -->
+                    <tr class="bottom-content__table__title-row font-28px">
+                        <td>
+                            <p>General</p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Sales Package</p>
+                        </td>
+                        <td>
+                            <p>1 sectional sofa</p>
+                        </td>
+                        <td>
+                            <p>1 Three Seater, 2 Single Seater</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Model Number</p>
+                        </td>
+                        <td>
+                            <p>TFCBLIGRBL6SRHS</p>
+                        </td>
+                        <td>
+                            <p>DTUBLIGRBL568</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Secondary Material</p>
+                        </td>
+                        <td>
+                            <p>Solid Wood</p>
+                        </td>
+                        <td>
+                            <p>Solid Wood</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Configuration</p>
+                        </td>
+                        <td>
+                            <p>L-shaped</p>
+                        </td>
+                        <td>
+                            <p>L-shaped</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Upholstery Material</p>
+                        </td>
+                        <td>
+                            <p>Fabric + Cotton</p>
+                        </td>
+                        <td>
+                            <p>Fabric + Cotton</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Upholstery Color</p>
+                        </td>
+                        <td>
+                            <p>Bright Grey & Lion</p>
+                        </td>
+                        <td>
+                            <p>Bright Grey & Lion</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__end-row">
+                        <td>
+                            <p></p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <!-- Product section -->
+                    <tr class="bottom-content__table__title-row font-28px">
+                        <td>
+                            <p>Product</p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Filling Material</p>
+                        </td>
+                        <td>
+                            <p>Foam</p>
+                        </td>
+                        <td>
+                            <p>Matte</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Finish Type</p>
+                        </td>
+                        <td>
+                            <p>Bright Grey & Lion</p>
+                        </td>
+                        <td>
+                            <p>Bright Grey & Lion</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Adjustable Headrest</p>
+                        </td>
+                        <td>
+                            <p>No</p>
+                        </td>
+                        <td>
+                            <p>Yes</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Maximum Load Capacity</p>
+                        </td>
+                        <td>
+                            <p>280 KG</p>
+                        </td>
+                        <td>
+                            <p>300 KG</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Origin of Manufacture</p>
+                        </td>
+                        <td>
+                            <p>India</p>
+                        </td>
+                        <td>
+                            <p>India</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__end-row">
+                        <td>
+                            <p></p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <!-- Dimensions section -->
+                    <tr class="bottom-content__table__title-row font-28px">
+                        <td>
+                            <p>Dimensions</p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Width</p>
+                        </td>
+                        <td>
+                            <p>265.32 cm</p>
+                        </td>
+                        <td>
+                            <p>265.32 cm</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Height</p>
+                        </td>
+                        <td>
+                            <p>76 cm</p>
+                        </td>
+                        <td>
+                            <p>76 cm</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Depth</p>
+                        </td>
+                        <td>
+                            <p>167.76 cm</p>
+                        </td>
+                        <td>
+                            <p>167.76 cm</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Weight</p>
+                        </td>
+                        <td>
+                            <p>45 KG</p>
+                        </td>
+                        <td>
+                            <p>65 KG</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Seat Height</p>
+                        </td>
+                        <td>
+                            <p>41.52 cm</p>
+                        </td>
+                        <td>
+                            <p>41.52 cm</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Leg Height</p>
+                        </td>
+                        <td>
+                            <p>5.46 cm</p>
+                        </td>
+                        <td>
+                            <p>5.46 cm</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__end-row">
+                        <td>
+                            <p></p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <!-- Warranty section -->
+                    <tr class="bottom-content__table__title-row font-28px">
+                        <td>
+                            <p>Warranty</p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Warranty Summary</p>
+                        </td>
+                        <td>
+                            <p>1 Year Manufacturing Warranty</p>
+                        </td>
+                        <td>
+                            <p>1.2 Year Manufacturing Warranty</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Warranty Service
+                                Type</p>
+                        </td>
+                        <td>
+                            <p style="overflow-wrap: break-word;">For Warranty Claims or Any Product Related Issues
+                                Please Email at operations@trevifurniture.com</p>
+                        </td>
+                        <td>
+                            <p>For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Covered in Warranty</p>
+                        </td>
+                        <td>
+                            <p>Warranty Against Manufacturing Defect</p>
+                        </td>
+                        <td>
+                            <p>Warranty of the product is limited to manufacturing defects only.</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Not Covered in Warranty</p>
+                        </td>
+                        <td>
+                            <p>The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use
+                                And Wear & Tear In The Natural Course Of Product Usage.</p>
+                        </td>
+                        <td>
+                            <p>The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use
+                                And Wear & Tear In The Natural Course Of Product Usage.</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__content-row font-20px">
+                        <td>
+                            <p>Domestic Warranty</p>
+                        </td>
+                        <td>
+                            <p>1 Year</p>
+                        </td>
+                        <td>
+                            <p>3 Months</p>
+                        </td>
+                    </tr>
+                    <tr class="bottom-content__table__end-row">
+                        <td>
+                            <p></p>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bottom-content__table__button-row font-20px">
+                        <td></td>
+                        <td><button>Add To Cart</button></td>
+                        <td><button>Add To Cart</button></td>
+                    </tr>
+                </table>
+            </div>
         </main>
+        <div class="footer-banner">
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/trophy1.svg" alt="trophy1">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">High Quality</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">crafted from top materials</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/guarantee.svg" alt="guarantee">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">Warranty Protection</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Over 2 years</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/shipping.svg" alt="shipping">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">Free Shipping</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Order over 150 $</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/customer-support.svg" alt="customer-support">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">24 / 7 Support</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Dedicated support</p>
+                </div>
+            </div>
+        </div>
         <footer class="footer"></footer>
     </div>
 </body>
