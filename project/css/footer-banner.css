@@ -1,0 +1,29 @@
+.footer-banner {
+    width: 100%;
+    margin-top: 112px;
+    display: flex;
+    padding: 100px 3%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAF3EA;
+    flex-shrink: 0;
+}
+
+.footer-banner__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-banner__item__text__title {
+    font-weight: 600;
+    line-height: 150%;
+    /* 37.5px */
+}
+
+.footer-banner__item__text__sub-title {
+    font-weight: 500;
+    line-height: 150%;
+    /* 30px */
+    color: var(--color-gray-6);
+}

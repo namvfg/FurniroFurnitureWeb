@@ -1,9 +1,13 @@
 :root {
-    --primary: #fff;
-    --secondary: #000;
+    --white: #fff;
+    --black: #000;
     --color-gray-1: #3A3A3A;
     --color-gray-2: #9F9F9F;
     --color-gray-3: #D9D9D9;
+    --color-gray-4: #727272;
+    --color-gray-5: #E8E8E8;
+    --color-gray-6: #898989;
+    --primary: #B88E2F;
 }
 
 * {
@@ -13,12 +17,18 @@
 }
 
 .container {
-    color: var(--secondary);
+    color: var(--black);
     font-family: 'Poppins', sans-serif;
+    min-width: 1280px;
 }
 
 body {
-    background-color: var(--primary);
+    background-color: var(--white);
+}
+
+.font-13px {
+    font-size: 13px;
+    font-style: normal;
 }
 
 .font-14px {
@@ -31,7 +41,33 @@ body {
     font-style: normal;
 }
 
+.font-18px {
+    font-size: 18px;
+    font-style: normal;
+}
+
+.font-20px {
+    font-size: 20px;
+    font-style: normal;
+}
+
 .font-24px {
     font-size: 24px;
     font-style: normal;
 }
+
+.font-25px {
+    font-size: 25px;
+    font-style: normal;
+}
+
+.font-28px {
+    font-size: 28px;
+    font-style: normal;
+}
+
+.font-48px {
+    font-size: 48px;
+    font-style: normal;
+}
+
