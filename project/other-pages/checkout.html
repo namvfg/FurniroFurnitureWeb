@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+
+    <!-- Link to GG Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header-footer.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/footer-banner.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <div id="notification" style="display: none;" class="alert"></div>
+    <div class="container">
+        <header class="header"></header>
+        <div class="banner">
+            <div class="banner_background">
+            </div>
+            <div class="banner__content">
+                <div class="banner__content__logo">
+                    <img src="/images/banner-icon.png" alt="logo">
+                </div>
+                <div class="banner__content__name font-48px">
+                    <p>Checkout</p>
+                </div>
+                <div class="banner__content__link font-16px">
+                    <p class="banner__content__link__home">Home</p>
+                    <img src="/images/dashicons_arrow-down-alt2.svg" alt="right-arrow">
+                    <p class="banner__content__link__other">Checkout</p>
+                </div>
+            </div>
+        </div>
+        <main class="main-content">
+            <form action="#">
+                <div class="left font-16px">
+                    <div class="title font-36px">
+                        <p>Billing details</p>
+                    </div>
+                    <div class="inputs">
+                        <div class="inputs__name">
+                            <div class="inputs__name__first">
+                                <label for="first-name">First Name</label>
+                                <input class="form-control" type="text" name="first-name" id="first-name">
+                            </div>
+                            <div class="inputs__name__last">
+                                <label for="first-name">Last Name</label>
+                                <input class="form-control" type="text" name="last-name" id="last-name">
+                            </div>
+                        </div>
+                        <div class="inputs__company">
+                            <label for="company">Company Name (Optional)</label>
+                            <input class="form-control" type="text" name="company" id="company">
+                        </div>
+                        <div class="inputs__country">
+                            <label for="country">Country / Region</label>
+                            <select class="form-control" name="country" id="country">
+                                <option selected>--Country--</option>
+                            </select>
+                            <img class="custom-arrow" src="/images/Vector.svg" alt="arrow">
+                        </div>
+                        <div class="inputs__province">
+                            <label for="province">Province</label>
+                            <select class="form-control" name="province" id="province">
+
+                            </select>
+                            <img class="custom-arrow" src="/images/Vector.svg" alt="arrow">
+                        </div>
+                        <div class="inputs__city">
+                            <label for="city">Town / City</label>
+                            <select class="form-control" name="city" id="city">
+
+                            </select>
+                            <img class="custom-arrow" src="/images/Vector.svg" alt="arrow">
+                        </div>
+                        <div class="inputs__street">
+                            <label for="street">Street address</label>
+                            <input class="form-control" type="text" name="street" id="street">
+                        </div>
+
+                        <div class="inputs__zip">
+                            <label for="zip">ZIP code</label>
+                            <input class="form-control" type="text" name="zip" id="zip">
+                        </div>
+                        <div class="inputs__phone">
+                            <label for="zip">Phone</label>
+                            <input class="form-control" type="text" name="phone" id="phone">
+                        </div>
+                        <div class="inputs__email">
+                            <label for="zip">Email address</label>
+                            <input class="form-control" type="text" name="email" id="email">
+                        </div>
+                        <div class="inputs__info">
+                            <input class="form-control" type="text" name="info" id="info"
+                                placeholder="Additional information">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-top">
+                        <div class="right-top__title font-24px">
+                            <p>Product</p>
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right-top__product">
+                            <p class="right-top__product__title font-16px">Asgaard sofa &nbsp;<span
+                                    class="font-12px">X</span>&nbsp; <span class="font-12px">1</span></p>
+                            <p class="right-top__product__number font-16px">Rs. 250,000.00</p>
+                        </div>
+                        <div class="right-top__sub-total">
+                            <p class="right-top__sub-total__title font-16px">Subtotal</p>
+                            <p class="right-top__sub-total__number font-16px">Rs. 250,000.00</p>
+                        </div>
+                        <div class="right-top__total">
+                            <p class="right-top__total__title font-16px">Total</p>
+                            <p class="right-top__total__number font-24px">Rs. 250,000.00</p>
+                        </div>
+                    </div>
+                    <div class="right-bottom font-16px">
+                        <div class="right-bottom__bank">
+                            <input type="radio" name="payment-method" id="bank">
+                            <label for="bank">Direct Bank Transfer</label>
+                        </div>
+                        <div class="right-bottom__paragraph-top">
+                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment
+                                reference. Your order will not be shipped until the funds have cleared in our account.
+                            </p>
+                        </div>
+                        <div class="right-bottom__cash">
+                            <input type="radio" name="payment-method" id="cash">
+                            <label for="cash">Cash On Delivery</label>
+                        </div>
+                        <div class="right-bottom__paragraph-bottom">
+                            <p>Your personal data will be used to support your experience throughout this website, to
+                                manage access to your account, and for other purposes described in our <span>privacy
+                                    policy</span>.
+                            </p>
+                        </div>
+                        <div class="right-bottom__order">
+                            <button class="font-20px" type="submit">Place order</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <div class="footer-banner">
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/trophy1.svg" alt="trophy1">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">High Quality</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">crafted from top materials</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/guarantee.svg" alt="guarantee">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">Warranty Protection</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Over 2 years</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/shipping.svg" alt="shipping">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">Free Shipping</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Order over 150 $</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/customer-support.svg" alt="customer-support">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">24 / 7 Support</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Dedicated support</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+</body>
+<!-- Script -->
+<script src="/js/main.js"></script>
+<script src="/js/header-footer.js"></script>
+<script src="/js/checkout.js"></script>
+
+</html>

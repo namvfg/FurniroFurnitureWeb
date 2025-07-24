@@ -27,3 +27,20 @@
     /* 30px */
     color: var(--color-gray-6);
 }
+
+@media (max-width: 768px) { 
+    .footer-banner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .footer-banner__item {
+        width: 100%;
+        height: auto;
+    }
+
+    
+}

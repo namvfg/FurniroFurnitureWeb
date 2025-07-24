@@ -8,3 +8,16 @@ const loadHTMLToClassName = (classSelector, filePath) => {
 
 loadHTMLToClassName(".header", "/other-pages/header.html");
 loadHTMLToClassName(".footer", "/other-pages/footer.html");
+
+const toggle = (classSelector, hiddenClass = "hidden") => {
+    $(`${classSelector}`).toggleClass(hiddenClass)
+    console.log("haha")
+}
+
+$(document).on("click", ".left-options", () => {
+    toggle(".navigators");
+})
+
+$(document).on("click", ".right-options", () => {
+    toggle(".tools");
+})
