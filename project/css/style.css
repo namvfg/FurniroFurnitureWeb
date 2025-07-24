@@ -22,8 +22,30 @@
     min-width: 1280px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        min-width: unset;
+        width: 100%;
+    }
+}
+
 body {
     background-color: var(--white);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.font-12px {
+    font-size: 12px;
+    font-style: normal;
 }
 
 .font-13px {
@@ -66,8 +88,28 @@ body {
     font-style: normal;
 }
 
+.font-32px {
+    font-size: 32px;
+    font-style: normal;
+}
+
+.font-36px {
+    font-size: 36px;
+    font-style: normal;
+}
+
 .font-48px {
     font-size: 48px;
     font-style: normal;
 }
 
+.alert {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}

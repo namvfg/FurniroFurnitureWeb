@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+
+    <!-- Link to GG Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header-footer.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/footer-banner.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <div id="notification" style="display: none;" class="alert"></div>
+    <div class="container">
+        <header class="header"></header>
+        <div class="banner">
+            <div class="banner_background">
+            </div>
+            <div class="banner__content">
+                <div class="banner__content__logo">
+                    <img src="/images/banner-icon.png" alt="logo">
+                </div>
+                <div class="banner__content__name font-48px">
+                    <p>Cart</p>
+                </div>
+                <div class="banner__content__link font-16px">
+                    <p class="banner__content__link__home">Home</p>
+                    <img src="/images/dashicons_arrow-down-alt2.svg" alt="right-arrow">
+                    <p class="banner__content__link__other">Cart</p>
+                </div>
+            </div>
+        </div>
+        <main class="main-content">
+            <form action="#">
+                <div class="list-prods">
+                    <table class="list-prods__table">
+                        <colgroup>
+                            <col style="width: 16%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 13%;">
+                            <col style="width: 20%;">
+                            <col style="width: 11%;">
+                        </colgroup>
+
+                        <tr class="list-prods__row-head font-16px">
+                            <th></th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th class="list-prods__row-head__quantity">Quantity</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                        </tr>
+
+                        <tr class="list-prods__row-prod">
+                            <td>
+                                <div><img src="/images/compare-prod-2.png" alt="compare-prod-2"></div>
+                                </th>
+                            <td class="list-prods__row-prod__name font-16px">Asgaard sofa</th>
+                            <td class="list-prods__row-prod__price font-16px">Rs. 250,000.00</th>
+                            <td class="list-prods__row-prod__input"><input type="number" name="quantity" value="1"
+                                    min="0"></th>
+                            <td class="list-prods__row-prod__total font-16px">Rs. 0.00</th>
+                            <td class="list-prods__row-prod__delete">
+                                <div><img src="/images/ant-design_delete-filled.svg" alt="delete"></div>
+                                </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="amount">
+                    <div class="amount__title font-32px">
+                        <p>Cart Totals</p>
+                    </div>
+                    <div class="amount__number">
+                        <div class="amount__number__subtotal">
+                            <p class="amount__number__title font-16px">Subtotal</p>
+                            <p class="amount__number__subtotal__number font-16px">Rs. 0.00</p>
+                        </div>
+                        <div class="amount__number__total">
+                            <p class="amount__number__title font-16px">Total</p>
+                            <p class="amount__number__total__number font-20px">Rs. 0.00</p>
+                        </div>
+                    </div>
+                    <div class="amount__button font-20px">
+                        <button type="submit">Check Out</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <div class="footer-banner">
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/trophy1.svg" alt="trophy1">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">High Quality</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">crafted from top materials</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/guarantee.svg" alt="guarantee">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">Warranty Protection</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Over 2 years</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/shipping.svg" alt="shipping">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">Free Shipping</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Order over 150 $</p>
+                </div>
+            </div>
+            <div class="footer-banner__item">
+                <div class="footer-banner__item__icon">
+                    <img src="/images/customer-support.svg" alt="customer-support">
+                </div>
+                <div class="footer-banner__item__text">
+                    <p class="footer-banner__item__text__title font-25px">24 / 7 Support</p>
+                    <p class="footer-banner__item__text__sub-title font-20px">Dedicated support</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+</body>
+<!-- Script -->
+<script src="/js/main.js"></script>
+<script src="/js/header-footer.js"></script>
+<script src="/js/cart.js"></script>
+
+</html>
