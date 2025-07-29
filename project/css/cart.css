@@ -12,6 +12,7 @@
 
 .list-prods {
     width: 65%;
+    overflow-x: auto;
 }
 
 .list-prods__table {
@@ -113,7 +114,7 @@
 }
 
 .amount {
-    width: 37%;
+    width: 35%;
     background-color: #F9F1E7;
 }
 
@@ -180,4 +181,32 @@
     color: var(--white);
     transition: ease-in-out 0.2s;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main-content form {
+        flex-wrap: wrap;
+    }
+
+    .list-prods {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .amount {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .amount__title {
+        margin-top: 50px;
+    }
+
+    .amount__number__subtotal,
+    .amount__number__total {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 75px;
+    }
+
 }
