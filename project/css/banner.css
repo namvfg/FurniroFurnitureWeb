@@ -41,6 +41,7 @@
 .banner__content__name {
     font-weight: 500;
     line-height: normal;
+    text-align: center;
 }
 
 .banner__content__link {
@@ -55,4 +56,11 @@
 .banner__content__link__other {
     font-weight: 300;
     line-height: normal;
+}
+
+@media (max-width: 768px) {
+    .banner_background {
+        background-position: 0% 10%;
+    }
+
 }

@@ -61,23 +61,28 @@
 }
 
 .navigators__item:hover {
-    background-color: var(--black);
+    background-color: var(--primary);
     color: var(--white);
 }
 
 .tools__list {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 5px;
 }
 
 .tools__item {
-    width: 28px;
-    height: 28px;
+    width: 48px;
+    height: 48px;
     flex-shrink: 0;
     background: var(--white);
+    padding: 10px;
 }
 
+.tools__item:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
 
 .tools__item img {
     width: 100%;
@@ -146,7 +151,7 @@
 }
 
 .footer-info__options__item:hover {
-    background-color: var(--black);
+    background-color: var(--primary);
     color: var(--white);
 }
 
@@ -241,7 +246,7 @@
         display: inline-block;
     }
 
-    .right-options {
+    .right-options:active {
         transform: rotate(180deg);
     }
 
