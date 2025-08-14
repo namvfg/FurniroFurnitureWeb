@@ -636,6 +636,13 @@ body {
     }
 }
 
+.line {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    margin-top: 100px;
+}
+
 @media (max-width: 768px) {
     .banner {
         height: 600px;
