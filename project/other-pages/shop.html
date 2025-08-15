@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/footer-banner.css">
+    <link rel="stylesheet" href="../css/shop.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header"></header>
+        <div class="banner">
+            <div class="banner_background">
+            </div>
+            <div class="banner__content">
+                <div class="banner__content__logo">
+                    <img src="../images/banner-icon.png" alt="logo">
+                </div>
+                <div class="banner__content__name font-48px">
+                    <p>Shop</p>
+                </div>
+                <div class="banner__content__link font-16px">
+                    <p class="banner__content__link__home">Home</p>
+                    <img src="../images/dashicons_arrow-down-alt2.svg" alt="right-arrow">
+                    <p class="banner__content__link__other">Shop</p>
+                </div>
+            </div>
+        </div>
+        <div class="filter-bar">
+            <div class="left">
+                <button class="btn-icon">
+                    <i class="fas fa-filter">
+                        <img src="../images/filter-icon.png" alt="">
+                    </i> Filter
+                </button>
+                <div class="view-icons">
+                    <button class="btn-icon">
+                        <img src="../images/4daucham-icon.png" alt="">
+                    </button>
+                    <button class="btn-icon">
+                        <img src="../images/view-list-icon.png" alt="">
+                    </button>
+                </div>
+                <div class="divider"></div>
+                <span class="result-text">Showing 1–16 of 32 results</span>
+            </div>
+            <div class="right">
+                <span>Show</span>
+                <input type="number" value="16" min="1">
+                <span>Short by</span>
+                <select>
+                    <option>Default</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid"></div>
+        <div class="pagination"></div>
+        <!-- Footer Banner -->
+        <div class="footer-banner">
+            <div>
+                <div class="footer-banner__item">
+                    <div class="footer-banner__item__icon">
+                        <img src="../images/trophy1.svg" alt="trophy1">
+                    </div>
+                    <div class="footer-banner__item__text">
+                        <p class="footer-banner__item__text__title font-25px">High Quality</p>
+                        <p class="footer-banner__item__text__sub-title font-20px">crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="footer-banner__item">
+                    <div class="footer-banner__item__icon">
+                        <img src="../images/guarantee.svg" alt="guarantee">
+                    </div>
+                    <div class="footer-banner__item__text">
+                        <p class="footer-banner__item__text__title font-25px">Warranty Protection</p>
+                        <p class="footer-banner__item__text__sub-title font-20px">Over 2 years</p>
+                    </div>
+                </div>
+                <div class="footer-banner__item">
+                    <div class="footer-banner__item__icon">
+                        <img src="../images/shipping.svg" alt="shipping">
+                    </div>
+                    <div class="footer-banner__item__text">
+                        <p class="footer-banner__item__text__title font-25px">Free Shipping</p>
+                        <p class="footer-banner__item__text__sub-title font-20px">Order over 150 $</p>
+                    </div>
+                </div>
+                <div class="footer-banner__item">
+                    <div class="footer-banner__item__icon">
+                        <img src="../images/customer-support.svg" alt="customer-support">
+                    </div>
+                    <div class="footer-banner__item__text">
+                        <p class="footer-banner__item__text__title font-25px">24 / 7 Support</p>
+                        <p class="footer-banner__item__text__sub-title font-20px">Dedicated support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer"></footer>
+    </div>
+</body>
+<script src="../js/header-footer.js"></script>
+<script src="../js/shop.js"></script>
+
+</html>
