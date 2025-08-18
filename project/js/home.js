@@ -1,37 +1,36 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const slides = document.querySelectorAll('.slide');
-    const nextBtn = document.querySelector('.next-arrow');
-    const prevBtn = document.querySelector('.prev-arrow');
-    const paginationContainer = document.querySelector('.slider-pagination');
+$(document).ready(function () {
+    const $slides = $('.slide');
+    const $nextBtn = $('.next-arrow');
+    const $prevBtn = $('.prev-arrow');
+    const $paginationContainer = $('.slider-pagination');
     let currentIndex = 0;
 
-    // Create pagination dots
-    slides.forEach((_, index) => {
-        const dot = document.createElement('span');
-        dot.classList.add('dot');
-        if (index === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
+    // Tạo dấu chấm phân trang
+    $slides.each(function (index) {
+        const $dot = $('<span class="dot"></span>');
+        if (index === 0) $dot.addClass('active');
+        $dot.on('click', function () {
             goToSlide(index);
         });
-        paginationContainer.appendChild(dot);
+        $paginationContainer.append($dot);
     });
-    const dots = document.querySelectorAll('.dot');
 
+    const $dots = $('.dot');
 
     function updateSlideClasses() {
-        slides.forEach((slide, index) => {
-            slide.classList.remove('active', 'prev', 'next');
+        $slides.each(function (index) {
+            $(this).removeClass('active prev next');
             if (index === currentIndex) {
-                slide.classList.add('active');
-            } else if (index === (currentIndex - 1 + slides.length) % slides.length) {
-                slide.classList.add('prev');
-            } else if (index === (currentIndex + 1) % slides.length) {
-                slide.classList.add('next');
+                $(this).addClass('active');
+            } else if (index === (currentIndex - 1 + $slides.length) % $slides.length) {
+                $(this).addClass('prev');
+            } else if (index === (currentIndex + 1) % $slides.length) {
+                $(this).addClass('next');
             }
         });
 
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentIndex);
+        $dots.each(function (index) {
+            $(this).toggleClass('active', index === currentIndex);
         });
     }
 
@@ -41,17 +40,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function showNextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
+        currentIndex = (currentIndex + 1) % $slides.length;
         updateSlideClasses();
     }
 
     function showPrevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        currentIndex = (currentIndex - 1 + $slides.length) % $slides.length;
         updateSlideClasses();
     }
 
-    nextBtn.addEventListener('click', showNextSlide);
-    prevBtn.addEventListener('click', showPrevSlide);
+    $nextBtn.on('click', showNextSlide);
+    $prevBtn.on('click', showPrevSlide);
 
     updateSlideClasses();
 });
