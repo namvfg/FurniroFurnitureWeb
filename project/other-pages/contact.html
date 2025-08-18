@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+
+    <!-- Link to GG Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/footer-banner.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <div id="notification" style="display: none;" class="alert"></div>
+    <div class="container">
+        <header class="header"></header>
+        <div class="banner">
+            <div class="banner_background">
+            </div>
+            <div class="banner__content">
+                <div class="banner__content__logo">
+                    <img src="../images/banner-icon.png" alt="logo">
+                </div>
+                <div class="banner__content__name font-48px">
+                    <p>Cart</p>
+                </div>
+                <div class="banner__content__link font-16px">
+                    <a href="/index.html">
+                        <p class="banner__content__link__home">Home</p>
+                    </a>
+                    <img src="../images/dashicons_arrow-down-alt2.svg" alt="right-arrow">
+                    <p class="banner__content__link__other">Cart</p>
+                </div>
+            </div>
+        </div>
+        <main class="main-content">
+            <div class="contact-title">
+                <h1 class="contact-title__heading font-36px">Get In Touch With Us</h1>
+                <p class="contact-title__subheading font-16px">For More Information About Our Product & Services. Please
+                    Feel Free
+                    To Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-content__info">
+                    <div class="contact-content__info__item">
+                        <div class="contact-content__info__item__icon">
+                            <img src="../images/address.svg" alt="address">
+                        </div>
+                        <div class="contact-content__info__item__text">
+                            <p class="contact-content__info__item__text__title font-24px">Address</p>
+                            <p class="contact-content__info__item__text__sub-title font-16px">236 5th SE Avenue, New
+                                York NY10000, United States</p>
+                        </div>
+                    </div>
+                    <div class="contact-content__info__item">
+                        <div class="contact-content__info__item__icon">
+                            <img src="../images/bxs_phone.svg" alt="phone">
+                        </div>
+                        <div class="contact-content__info__item__text">
+                            <p class="contact-content__info__item__text__title font-24px">Phone</p>
+                            <p class="contact-content__info__item__text__sub-title font-16px">
+                                Mobile: +(84) 546-6789
+                                <br>
+                                Hotline: +(84) 456-6789
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-content__info__item">
+                        <div class="contact-content__info__item__icon">
+                            <img src="../images/bi_clock-fill.svg" alt="clock">
+                        </div>
+                        <div class="contact-content__info__item__text">
+                            <p class="contact-content__info__item__text__title font-24px">Working Time</p>
+                            <p class="contact-content__info__item__text__sub-title font-16px">
+                                Monday-Friday: 9:00 - 22:00
+                                <br>
+                                Saturday-Sunday: 9:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contact-content__form">
+                    <form action="#">
+                        <div class="contact-content__form__item">
+                            <label for="name" class="font-16px">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Abc" required>
+                        </div>
+                        <div class="contact-content__form__item">
+                            <label for="email" class="font-16px">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="Abc@def.com" required>
+                        </div>
+                        <div class="contact-content__form__item">
+                            <label for="subject" class="font-16px">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="This is an optional" >
+                        </div>
+                        <div class="contact-content__form__item">
+                            <label for="message" class="font-16px">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Hi! i’d like to ask about..."></textarea>
+                        </div>
+                        <button type="submit" class="contact-content__form__submit font-16px">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <div class="footer-banner">
+            <div>
+                <div class="footer-banner__item">
+                    <div class="footer-banner__item__icon">
+                        <img src="../images/trophy1.svg" alt="trophy1">
+                    </div>
+                    <div class="footer-banner__item__text">
+                        <p class="footer-banner__item__text__title font-25px">High Quality</p>
+                        <p class="footer-banner__item__text__sub-title font-20px">crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="footer-banner__item">
+                    <div class="footer-banner__item__icon">
+                        <img src="../images/guarantee.svg" alt="guarantee">
+                    </div>
+                    <div class="footer-banner__item__text">
+                        <p class="footer-banner__item__text__title font-25px">Warranty Protection</p>
+                        <p class="footer-banner__item__text__sub-title font-20px">Over 2 years</p>
+                    </div>
+                </div>
+                <div class="footer-banner__item">
+                    <div class="footer-banner__item__icon">
+                        <img src="../images/shipping.svg" alt="shipping">
+                    </div>
+                    <div class="footer-banner__item__text">
+                        <p class="footer-banner__item__text__title font-25px">Free Shipping</p>
+                        <p class="footer-banner__item__text__sub-title font-20px">Order over 150 $</p>
+                    </div>
+                </div>
+                <div class="footer-banner__item">
+                    <div class="footer-banner__item__icon">
+                        <img src="../images/customer-support.svg" alt="customer-support">
+                    </div>
+                    <div class="footer-banner__item__text">
+                        <p class="footer-banner__item__text__title font-25px">24 / 7 Support</p>
+                        <p class="footer-banner__item__text__sub-title font-20px">Dedicated support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+</body>
+<!-- Script -->
+<script src="../js/main.js"></script>
+<script src="../js/header-footer.js"></script>
+<script src="../js/cart.js"></script>
+
+</html>
