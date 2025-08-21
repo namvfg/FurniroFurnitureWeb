@@ -680,6 +680,7 @@ body {
     }
 
     .slide {
+        margin-top: 5px;
         width: 300px;
         height: 400px;
     }
@@ -697,28 +698,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .banner-text {
-        padding: 20px;
-    }
 
-    .banner-text h1 {
-        font-size: 28px;
-        line-height: 36px;
-    }
-
-    .banner-text .desc {
-        font-size: 14px;
-    }
-
-    .product-grid-title h2 {
-        font-size: 32px;
-    }
-
-    .inspiration-container .text-content h1 {
-        font-size: 2rem;
-    }
-}
 
 @media (max-width: 768px) {
     body {

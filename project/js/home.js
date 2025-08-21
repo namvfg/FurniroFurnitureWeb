@@ -55,14 +55,14 @@ $(document).ready(function () {
     updateSlideClasses();
 
     const newProducts = [
-        { id: 9, name: 'New Chair', description: 'Comfortable office chair', price: 'Rp 1.200.000', oldPrice: null, image: '../project/images/Potty.png', badge: { type: 'new', text: 'New' } },
-        { id: 10, name: 'Modern Lamp', description: 'Bright desk lamp', price: 'Rp 3.000.000', oldPrice: 'Rp 4.000.000', image: '../project/images/leviosa.png', badge: { type: 'sale', text: '-25%' } },
-        { id: 11, name: 'Wooden Table', description: 'Solid oak dining table', price: 'Rp 8.500.000', oldPrice: null, image: '../project/images/lolito.png', badge: null },
-        { id: 12, name: 'Soft Carpet', description: 'Fluffy living room carpet', price: 'Rp 450.000', oldPrice: null, image: '../project/images/respira.png', badge: { type: 'new', text: 'New' } },
-        { id: 13, name: 'Bookshelf', description: 'Large capacity bookshelf', price: 'Rp 2.100.000', oldPrice: null, image: '../project/images/grifo.png', badge: null },
-        { id: 14, name: 'Kitchen Set', description: 'Complete knife set', price: 'Rp 900.000', oldPrice: 'Rp 1.500.000', image: '../project/images/pingky.png', badge: { type: 'sale', text: '-40%' } },
-        { id: 15, name: 'Sofa Bed', description: 'Convertible sofa bed', price: 'Rp 6.500.000', oldPrice: null, image: '../project/images/potty.png', badge: null },
-        { id: 16, name: 'Vase', description: 'Elegant flower vase', price: 'Rp 750.000', oldPrice: null, image: '../project/images/muggo.png', badge: { type: 'new', text: 'New' } }
+        { id: 9, name: 'New Chair', description: 'Comfortable office chair', price: 'Rp 1.200.000', oldPrice: null, image: '/images/Potty.png', badge: { type: 'new', text: 'New' } },
+        { id: 10, name: 'Modern Lamp', description: 'Bright desk lamp', price: 'Rp 3.000.000', oldPrice: 'Rp 4.000.000', image: '/images/leviosa.png', badge: { type: 'sale', text: '-25%' } },
+        { id: 11, name: 'Wooden Table', description: 'Solid oak dining table', price: 'Rp 8.500.000', oldPrice: null, image: '/images/lolito.png', badge: null },
+        { id: 12, name: 'Soft Carpet', description: 'Fluffy living room carpet', price: 'Rp 450.000', oldPrice: null, image: '/images/respira.png', badge: { type: 'new', text: 'New' } },
+        { id: 13, name: 'Bookshelf', description: 'Large capacity bookshelf', price: 'Rp 2.100.000', oldPrice: null, image: '/images/grifo.png', badge: null },
+        { id: 14, name: 'Kitchen Set', description: 'Complete knife set', price: 'Rp 900.000', oldPrice: 'Rp 1.500.000', image: '/images/pingky.png', badge: { type: 'sale', text: '-40%' } },
+        { id: 15, name: 'Sofa Bed', description: 'Convertible sofa bed', price: 'Rp 6.500.000', oldPrice: null, image: '/images/potty.png', badge: null },
+        { id: 16, name: 'Vase', description: 'Elegant flower vase', price: 'Rp 750.000', oldPrice: null, image: '/images/muggo.png', badge: { type: 'new', text: 'New' } }
     ];
 
     let isExpanded = false;
@@ -81,7 +81,7 @@ $(document).ready(function () {
                     ${badgeHTML}
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span>⇄ Compare</span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
                     </div>
                 </div>
                 <div class="product-info">
