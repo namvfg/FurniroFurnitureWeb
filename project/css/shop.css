@@ -173,10 +173,8 @@ select {
 .product-card.hidden {
     opacity: 0;
     transform: scale(0.95);
-    /* Dùng visibility thay vì display để transition hoạt động */
     visibility: hidden;
     position: absolute;
-    /* Loại bỏ khỏi luồng layout */
 }
 
 

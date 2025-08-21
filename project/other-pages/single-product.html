@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/footer-banner.css">
+    <link rel="stylesheet" href="../css/single-product.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header"></header>
+        <div class="breadcrumb-container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Asgaard sofa</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="product-section">
+            <div class="product-gallery">
+                <div class="thumbnails">
+                </div>
+                <div class="main-image">
+                    <img src="" alt="Asgaard Sofa" id="main-product-image">
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h1 class="product-title">Asgaard sofa</h1>
+                <p class="product-price">Rs. 250,000.00</p>
+
+                <div class="product-review">
+                    <div class="stars">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <span class="review-count">5 Customer Review</span>
+                </div>
+
+                <p class="product-description">
+                    Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted
+                    hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
+                </p>
+
+                <div class="options-group">
+                    <p class="option-label">Size</p>
+                    <div class="size-options">
+                        <button class="size-btn active">L</button>
+                        <button class="size-btn">XL</button>
+                        <button class="size-btn">XS</button>
+                    </div>
+                </div>
+
+                <div class="options-group">
+                    <p class="option-label">Color</p>
+                    <div class="color-options">
+                        <button class="color-swatch active" data-color="beige"
+                            style="background-color: #B88E2F;"></button>
+                        <button class="color-swatch" data-color="gray" style="background-color: #808080;"></button>
+                    </div>
+                </div>
+
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button id="decrease-qty">-</button>
+                        <span id="quantity">1</span>
+                        <button id="increase-qty">+</button>
+                    </div>
+                    <button class="btn-action">Add To Cart</button>
+                    <button class="btn-action">+ Compare</button>
+                </div>
+
+                <hr class="meta-divider">
+
+                <div class="product-meta">
+                    <p><span>SKU</span>: SS001</p>
+                    <p><span>Category</span>: Sofas</p>
+                    <p><span>Tags</span>: Sofa, Chair, Home, Shop</p>
+                    <div class="share-options">
+                        <span>Share</span>
+                        <a href="#"><img style="width: 30px; height: 30px;" src="../images/facebook.svg"
+                                alt="Facebook"></a>
+                        <a href="#"><img style="width: 30px; height: 30px;" src="../images/linkedIn.svg"
+                                alt="LinkedIn"></a>
+                        <a href="#"><img style="width: 30px; height: 30px;" src="../images/twitter.svg"
+                                alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-tabs">
+                <a href="#" class="tab-link active">Description</a>
+                <a href="#" class="tab-link">Additional Information</a>
+                <a href="#" class="tab-link">Reviews [5]</a>
+            </div>
+            <div class="product-content">
+                <p>Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn portable active stereo speaker takes
+                    the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+                <p>Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting
+                    the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero
+                    with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both
+                    articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal
+                    preferences while the guitar-influenced leather strap enables easy and stylish travel.</p>
+                <div class="image-gallery">
+                    <img src="../images/Sofa-Content-1.png" alt="Hình ảnh sản phẩm 1">
+                    <img src="../images/Sofa-Content-2.png" alt="Hình ảnh sản phẩm 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-grid-title">
+            <h2>Related Products</h2>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../images/Syltherine.png" alt="Sytherine">
+                    <div class="badge sale">-30%</div>
+                    <div class="product-overlay">
+                        <button>Add to cart</button>
+                        <div class="overlay-actions"><span>⇆ Share</span><span>⇄ Compare</span><span>♡ Like</span></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Sytherine</div>
+                    <div class="product-description">Stylish cafe chair</div>
+                    <div class="product-price">Rp 2.500.000 <span class="old-price">Rp 3.500.000</span></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../images/Leviosa.png" alt="Leviosa">
+                    <div class="product-overlay">
+                        <button>Add to cart</button>
+                        <div class="overlay-actions"><span>⇆ Share</span><span>⇄ Compare</span><span>♡ Like</span></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Leviosa</div>
+                    <div class="product-description">Stylish cafe chair</div>
+                    <div class="product-price">Rp 2.500.000</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../images/Lolito.png" alt="Lolito">
+                    <div class="badge sale">-50%</div>
+                    <div class="product-overlay">
+                        <button>Add to cart</button>
+                        <div class="overlay-actions"><span>⇆ Share</span><span>⇄ Compare</span><span>♡ Like</span></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Lolito</div>
+                    <div class="product-description">Luxury big sofa</div>
+                    <div class="product-price">Rp 7.000.000 <span class="old-price">Rp 14.000.000</span></div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../images/Respira.png" alt="Respira">
+                    <div class="badge new">New</div>
+                    <div class="product-overlay">
+                        <button>Add to cart</button>
+                        <div class="overlay-actions"><span>⇆ Share</span><span>⇄ Compare</span><span>♡ Like</span></div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Respira</div>
+                    <div class="product-description">Outdoor bar table and stool</div>
+                    <div class="product-price">Rp 500.000</div>
+                </div>
+            </div>
+        </div>
+        <div class="show-more">
+            <button id="show-more-btn">Show More</button>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+</body>
+<!-- Script -->
+<script src="../js/header-footer.js"></script>
+<script src="../js/single-product.js"></script>
+
+</html>
