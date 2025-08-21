@@ -84,9 +84,9 @@ $(document).ready(function () {
 
     const newProducts = [
         { id: 5, name: 'New Chair', description: 'Comfortable office chair', price: 'Rp 1.200.000', oldPrice: null, image: '../images/Potty.png', badge: { type: 'new', text: 'New' } },
-        { id: 6, name: 'Modern Lamp', description: 'Bright desk lamp', price: 'Rp 3.000.000', oldPrice: 'Rp 4.000.000', image: '../images/leviosa.png', badge: { type: 'sale', text: '-25%' } },
-        { id: 7, name: 'Wooden Table', description: 'Solid oak dining table', price: 'Rp 8.500.000', oldPrice: null, image: '../images/lolito.png', badge: null },
-        { id: 8, name: 'Soft Carpet', description: 'Fluffy living room carpet', price: 'Rp 450.000', oldPrice: null, image: '../images/respira.png', badge: { type: 'new', text: 'New' } },
+        { id: 6, name: 'Modern Lamp', description: 'Bright desk lamp', price: 'Rp 3.000.000', oldPrice: 'Rp 4.000.000', image: '../images/Leviosa.png', badge: { type: 'sale', text: '-25%' } },
+        { id: 7, name: 'Wooden Table', description: 'Solid oak dining table', price: 'Rp 8.500.000', oldPrice: null, image: '../images/Lolito.png', badge: null },
+        { id: 8, name: 'Soft Carpet', description: 'Fluffy living room carpet', price: 'Rp 450.000', oldPrice: null, image: '../images/Respira.png', badge: { type: 'new', text: 'New' } },
     ];
 
     let isExpanded = false;
