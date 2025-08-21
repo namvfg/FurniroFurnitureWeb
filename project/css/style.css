@@ -22,6 +22,11 @@
     min-width: 1280px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 768px) {
     .container {
         min-width: unset;
