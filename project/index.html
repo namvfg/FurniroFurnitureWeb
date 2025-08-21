@@ -15,12 +15,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/banner.css">
-    <link rel="stylesheet" href="/css/footer-banner.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/footer-banner.css">
+    <link rel="stylesheet" href="../css/home.css">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -28,17 +27,57 @@
 
 <body>
     <div class="container">
-        <header class="header"></header>
+        <header class="header">
+            <div class="left-options">
+                <img src="./images/option-svgrepo-com.svg" alt="option">
+            </div>
+            <div class="logo">
+                <div class="logo__icon">
+                    <a href="./index.html"><img src="../images/logo.png" alt="logo"></a>
+                </div>
+                <div class="logo__name">
+                    <p><a href="./index.html">Furniro</a></p>
+                </div>
+            </div>
+            <div class="right-options">
+                <img src="./images/lines-svgrepo-com.svg" alt="option">
+            </div>
+            <div class="navigators hidden">
+                <ul class="navigators__list font-16px">
+                    <li class="navigators__item"><a href="./index.html">Home</a></li>
+                    <li class="navigators__item"><a href="./other-pages/shop.html">Shop</a></li>
+                    <li class="navigators__item">About</li>
+                    <li class="navigators__item"><a href="./other-pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="tools hidden">
+                <ul class="tools__list">
+                    <li class="tools__item">
+                        <a href=""><img src="./images/mdi_account-alert-outline.svg" alt="account-alert"></a>
+                    </li>
+                    <li class="tools__item">
+                        <a href="#"><img src="./images/akar-icons_search.svg" alt="serach"></a>
+                    </li>
+                    <li class="tools__item">
+                        <a href="#"><img src="./images/akar-icons_heart.svg" alt="heart"></a>
+                    </li>
+                    <li class="tools__item">
+                        <a href="./other-pages/cart.html"><img src="./images/ant-design_shopping-cart-outlined.svg"
+                                alt="cart"></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
         <div class="banner">
             <div class="banner-background">
-                <img src="images/banner-home.jpg" alt="">
+                <img src="./images/banner-home.jpg" alt="">
             </div>
             <div class="banner-text">
                 <p class="tag">New Arrival</p>
                 <h1>Discover Our <br>New Collection</h1>
                 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
                     ullamcorper mattis.</p>
-                <button><a href="/other-pages/single-product.html">BUY NOW</a></button>
+                <button><a href="./other-pages/single-product.html">BUY NOW</a></button>
             </div>
         </div>
 
@@ -49,15 +88,15 @@
             </div>
             <div class="card-range">
                 <div class="card-range-item">
-                    <img src="/images/card-range-dining.png" alt="Dining Room">
+                    <img src="./images/card-range-dining.png" alt="Dining Room">
                     <h3>Dining</h3>
                 </div>
                 <div class="card-range-item">
-                    <img src="/images/card-range-livingroom.png" alt="Living Room">
+                    <img src="./images/card-range-livingroom.png" alt="Living Room">
                     <h3>Living</h3>
                 </div>
                 <div class="card-range-item">
-                    <img src="/images/card-range-bedroom.png" alt="Bedroom">
+                    <img src="./images/card-range-bedroom.png" alt="Bedroom">
                     <h3>Bedroom</h3>
                 </div>
             </div>
@@ -72,11 +111,13 @@
             <div class="product-card">
                 <div class="product-image">
 
-                    <img src="/images/Syltherine.png" alt="Sytherine">
+                    <img src="./images/Syltherine.png" alt="Sytherine">
                     <div class="badge">-30%</div>
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a
+                                    href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -88,10 +129,12 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/images/Leviosa.png" alt="Leviosa">
+                    <img src="./images/Leviosa.png" alt="Leviosa">
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a
+                                    href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -103,11 +146,13 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/images/Lolito.png" alt="Lolito">
+                    <img src="./images/Lolito.png" alt="Lolito">
                     <div class="badge">-50%</div>
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a
+                                    href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -119,11 +164,13 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/images/Respira.png" alt="Respira">
+                    <img src="./images/Respira.png" alt="Respira">
                     <div class="badge new">New</div>
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a
+                                    href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -135,11 +182,13 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/images/Grifo.png" alt="Grifo">
+                    <img src="./images/Grifo.png" alt="Grifo">
                     <div class="badge new">New</div>
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a
+                                    href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -151,11 +200,13 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/images/Muggo.png" alt="Muggo">
+                    <img src="./images/Muggo.png" alt="Muggo">
                     <div class="badge new">New</div>
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a
+                                    href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -167,11 +218,13 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/images/Pingky.png" alt="Pingky">
+                    <img src="./images/Pingky.png" alt="Pingky">
                     <div class="badge">-50%</div>
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a
+                                    href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -183,11 +236,13 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="/images/Potty.png" alt="Potty">
+                    <img src="./images/Potty.png" alt="Potty">
                     <div class="badge new">New</div>
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a
+                                    href="/other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-info">
@@ -211,7 +266,7 @@
             <div class="gallery-container">
                 <div class="image-slider">
                     <div class="slide">
-                        <img src="/images/BedRoom.png" alt="Modern Bedroom">
+                        <img src="./images/BedRoom.png" alt="Modern Bedroom">
                         <div class="slide-caption">
                             <div class="caption-text">
                                 <p>01 &mdash; Bed Room</p>
@@ -220,7 +275,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="/images/DiningRoom.png" alt="Dining Area">
+                        <img src="./images/DiningRoom.png" alt="Dining Area">
                         <div class="slide-caption">
                             <div class="caption-text">
                                 <p>02 &mdash; Dining</p>
@@ -229,7 +284,7 @@
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="/images/LivingRoom.png" alt="Living Room with Sofa">
+                        <img src="./images/LivingRoom.png" alt="Living Room with Sofa">
                         <div class="slide-caption">
                             <div class="caption-text">
                                 <p>03 &mdash; Living</p>
@@ -262,29 +317,28 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item item-1">
-                    <img src="/images/item1.png" alt="Tall black shelf with plants and decor">
+                    <img src="./images/item1.png" alt="Tall black shelf with plants and decor">
                 </div>
                 <div class="gallery-item item-2">
-                    <img src="/images/item2.png"
-                        alt="Desk with a laptop, a vintage radio, and a white brick wall">
+                    <img src="./images/item2.png" alt="Desk with a laptop, a vintage radio, and a white brick wall">
                 </div>
                 <div class="gallery-item item-3">
-                    <img src="/images/item3.png" alt="Vintage-style yellow armchair in a minimalist room">
+                    <img src="./images/item3.png" alt="Vintage-style yellow armchair in a minimalist room">
                 </div>
                 <div class="gallery-item item-4">
-                    <img src="/images/item4.png" alt="Modern dining room with a hanging lamp">
+                    <img src="./images/item4.png" alt="Modern dining room with a hanging lamp">
                 </div>
                 <div class="gallery-item item-5">
-                    <img src="/images/item5.png" alt="Cozy bedroom with a padded headboard and a bench">
+                    <img src="./images/item5.png" alt="Cozy bedroom with a padded headboard and a bench">
                 </div>
                 <div class="gallery-item item-6">
-                    <img src="/images/item6.png" alt="Dining table by a brick wall with bright sunlight">
+                    <img src="./images/item6.png" alt="Dining table by a brick wall with bright sunlight">
                 </div>
                 <div class="gallery-item item-7">
-                    <img src="/images/item1.png" alt="A blank picture frame on a wall next to a vase">
+                    <img src="./images/item1.png" alt="A blank picture frame on a wall next to a vase">
                 </div>
                 <div class="gallery-item item-8">
-                    <img src="/images/item2.png" alt="Kitchen counter with geometric tile backsplash">
+                    <img src="./images/item2.png" alt="Kitchen counter with geometric tile backsplash">
                 </div>
             </div>
         </div>
@@ -297,7 +351,6 @@
 </body>
 
 <!-- Script -->
-<script src="/js/header-footer.js"></script>
-<script src="/js/home.js"></script>
+<script src="./js/home.js"></script>
 
 </html>
