@@ -50,6 +50,12 @@
     background: var(--white);
 }
 
+.inputs select.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
 .inputs>div {
     position: relative;
 }
