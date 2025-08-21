@@ -8,7 +8,7 @@ $(function () {
         { name: 'Muggo', description: 'Small mug', price: 150000, oldPrice: null, image: '../images/Muggo.png', badgeType: 'new', badgeText: 'New' },
         { name: 'Pingky', description: 'Cute bed set', price: 7000000, oldPrice: 14000000, image: '../images/Pingky.png', badgeType: 'sale', badgeText: '-50%' },
         { name: 'Potty', description: 'Minimalist flower pot', price: 500000, oldPrice: null, image: '../images/Potty.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Respira', description: 'Description', price: 500000, oldPrice: null, image: '../images/respira.png', badgeType: null, badgeText: null },
+        { name: 'Respira', description: 'Description', price: 500000, oldPrice: null, image: '../images/Respira.png', badgeType: null, badgeText: null },
         { name: 'Syltherine', description: 'Stylish cafe chair', price: 2500000, oldPrice: 3500000, image: '../images/Syltherine.png', badgeType: 'sale', badgeText: '-30%' },
         { name: 'Leviosa', description: 'Stylish cafe chair', price: 2500000, oldPrice: null, image: '../images/Leviosa.png', badgeType: null, badgeText: null },
         { name: 'Lolito', description: 'Luxury big sofa', price: 7000000, oldPrice: 14000000, image: '../images/Lolito.png', badgeType: 'sale', badgeText: '-50%' },
