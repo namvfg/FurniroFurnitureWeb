@@ -76,3 +76,37 @@ countrySelect.on('change', () => {
 stateSelect.on('change', () => {
     loadCities()
 })
+
+document.querySelector("form").addEventListener("submit", function (e) {
+    const country = document.getElementById("country");
+    const province = document.getElementById("province");
+    const city = document.getElementById("city");
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const paymentMethods = document.querySelectorAll('input[name="payment-method"]');
+
+    let errors = [];
+
+    // Check if country is selected properly
+    if (country.value === "--Country--") {
+        errors.push("Hãy vui lòng chọn quốc gia.");
+    }
+
+    if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+        errors.push("Email không hợp lệ.");
+    }
+
+    if (!phone.match(/^[0-9]{10,15}$/)) {
+        errors.push("Số điện thoại không hợp lệ. Vui lòng nhập từ 10 đến 15 chữ số.");
+    }
+
+    // Check if any payment method is selected
+    if (![...paymentMethods].some(pm => pm.checked)) {
+        errors.push("Hãy chọn phương thức thanh toán.");
+    }
+
+    if (errors.length > 0) {
+        e.preventDefault();
+        alert(errors.join("\n"));
+    }
+});
