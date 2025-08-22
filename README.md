@@ -31,7 +31,7 @@ You can use the [Live Server](https://marketplace.visualstudio.com/items?itemNam
 
 ---
 ## 📂 Project Structure
-furniro/  
+project/  
 ├── index.html  
 ├── css/  
 │ ├── style.css  
