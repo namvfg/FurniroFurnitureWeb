@@ -31,20 +31,20 @@ You can use the [Live Server](https://marketplace.visualstudio.com/items?itemNam
 
 ---
 ## 📂 Project Structure
-furniro/
-#├── index.html
-#├── css/
-#│ ├── style.css
-#│ ├── header-footer.css
-#│ └── ...
-#├── js/
-#│ ├── home.js
-#│ └── header-footer.js
-#├── images/
-#├── other-pages/
-#│ ├── shop.html
-#│ ├── cart.html
-#│ └── ...
+# furniro/
+# ├── index.html
+# ├── css/
+# │ ├── style.css
+# │ ├── header-footer.css
+# │ └── ...
+# ├── js/
+# │ ├── home.js
+# │ └── header-footer.js
+# ├── images/
+# ├── other-pages/
+# │ ├── shop.html
+# │ ├── cart.html
+# │ └── ...
 
 ## 🌐 Deployment
 The website is also deployed on GitHub Pages
