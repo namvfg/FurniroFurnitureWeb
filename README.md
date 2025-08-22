@@ -47,7 +47,8 @@ furniro/
 │ └── ...  
 
 ## 🌐 Deployment
-The website is also deployed on GitHub Pages
+The website is also deployed on GitHub Pages:
+[Link Web](https://namvfg.github.io/FurniroFurnitureWeb/)
 
 ## 📌 Notes
 - No backend logic included; this is a **fully static front-end** demo.
