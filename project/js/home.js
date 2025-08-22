@@ -74,6 +74,8 @@ $(document).ready(function () {
 
         const oldPriceHTML = product.oldPrice ? `<span class="old-price">${product.oldPrice}</span>` : '';
 
+        const productComparison = "./other-pages/product-comparison.html";
+
         return `
             <div class="product-card added-product"> 
                 <div class="product-image">
@@ -81,7 +83,7 @@ $(document).ready(function () {
                     ${badgeHTML}
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="../other-pages/product-comparison.html">⇄ Compare</a></span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="${productComparison}">⇄ Compare</a></span><span>♡ Like</span></div>
                     </div>
                 </div>
                 <div class="product-info">
