@@ -74,7 +74,7 @@ $(document).ready(function () {
 
         const oldPriceHTML = product.oldPrice ? `<span class="old-price">${product.oldPrice}</span>` : '';
 
-        const productComparison = "./FurniroFurnitureWeb/other-pages/product-comparison.html";
+        const productComparison = "other-pages/product-comparison.html";
 
         return `
             <div class="product-card added-product"> 
