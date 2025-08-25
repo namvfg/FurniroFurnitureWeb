@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    // --- OBJECT QUẢN LÝ CÁC BỘ ẢNH ---
     const productImages = {
         'beige': {
             main: '../images/sofa-mau1-1.png',

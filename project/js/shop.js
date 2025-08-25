@@ -32,8 +32,6 @@ $(function () {
         { name: 'Leviosa', description: 'Stylish cafe chair', price: 2500000, oldPrice: null, image: '../images/Leviosa.png', badgeType: null, badgeText: null },
     ];
 
-
-    // HÀM TẠO COMPONENT SẢN PHẨM
     function createProductCardHTML(product) {
         const formattedPrice = `Rp ${product.price.toLocaleString('id-ID')}`;
         const oldPriceHTML = product.oldPrice ? `<span class="old-price">Rp ${product.oldPrice.toLocaleString('id-ID')}</span>` : '';
@@ -57,26 +55,21 @@ $(function () {
         `;
     }
 
-
-    // Render các sản phẩm từ data
     $.each(productsData, function (index, product) {
         $('.product-grid').append(createProductCardHTML(product));
     });
 
-    // Thiết lập các biến phân trang
     const itemsPerPage = 16;
     const $allProducts = $('.product-grid .product-card');
     const totalPages = Math.ceil($allProducts.length / itemsPerPage);
     let currentPage = 1;
     let isAnimating = false;
 
-    // Gán số trang cho từng sản phẩm
     $allProducts.each(function (index) {
         const pageNum = Math.ceil((index + 1) / itemsPerPage);
         $(this).attr('data-page', pageNum);
     });
 
-    // Tạo các nút phân trang
     for (let i = 1; i <= totalPages; i++) {
         const $button = $('<button></button>').addClass('page-btn').attr('data-page', i).text(i);
         $('.pagination').append($button);
@@ -85,7 +78,6 @@ $(function () {
         $('.pagination').append('<button class="next-btn">Next</button>');
     }
 
-    // Hàm hiển thị trang với hiệu ứng mượt mà
     function showPage(pageNum) {
         if (isAnimating || pageNum === currentPage) return;
         isAnimating = true;
@@ -131,7 +123,6 @@ $(function () {
         $('.page-btn[data-page="' + pageNum + '"]').addClass('active');
     }
 
-    // Xử lý sự kiện click
     $('.pagination').on('click', '.page-btn', function () {
         showPage(parseInt($(this).data('page')));
     });
@@ -141,8 +132,7 @@ $(function () {
         showPage(nextPage);
     });
 
-    // Khởi tạo
-    $allProducts.hide(); // Ẩn tất cả trước
+    $allProducts.hide(); 
     $allProducts.filter('[data-page="1"]').show();
     $('.page-btn[data-page="1"]').addClass('active');
 });

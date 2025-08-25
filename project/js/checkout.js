@@ -87,7 +87,6 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
     let errors = [];
 
-    // Check if country is selected properly
     if (country.value === "--Country--") {
         errors.push("Hãy vui lòng chọn quốc gia.");
     }
@@ -100,7 +99,6 @@ document.querySelector("form").addEventListener("submit", function (e) {
         errors.push("Số điện thoại không hợp lệ. Vui lòng nhập từ 10 đến 15 chữ số.");
     }
 
-    // Check if any payment method is selected
     if (![...paymentMethods].some(pm => pm.checked)) {
         errors.push("Hãy chọn phương thức thanh toán.");
     }
