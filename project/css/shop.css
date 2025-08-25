@@ -109,7 +109,6 @@ select {
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
-/* Class để ẩn sản phẩm khi chuyển trang */
 .product-card.hidden {
     opacity: 0;
     transform: scale(0.95);
@@ -148,7 +147,6 @@ select {
     font-weight: 500;
 }
 
-/* Thêm class .sale cho badge giảm giá */
 .badge.sale {
     background-color: #E97171;
 }
@@ -230,7 +228,6 @@ select {
     gap: 5px;
 }
 
-/* --- CSS cho các nút phân trang --- */
 .pagination {
     display: flex;
     justify-content: center;

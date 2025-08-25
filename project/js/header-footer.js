@@ -7,7 +7,6 @@ const loadHTMLToClassName = (classSelector, filePath) => {
 };
 
 const getBasePath = () => {
-    // Lấy URL của trang hiện tại
     const currentPath = window.location.pathname;
 
     if (currentPath.includes("/other-pages/")) {

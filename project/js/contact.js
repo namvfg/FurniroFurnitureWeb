@@ -4,7 +4,6 @@ document.querySelector("form").addEventListener("submit", function (e) {
     const subject = document.getElementById("subject").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Regex kiểm tra định dạng email
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     let errors = [];
@@ -22,7 +21,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     }
 
     if (errors.length > 0) {
-        e.preventDefault(); // Ngăn gửi form
+        e.preventDefault(); 
         alert(errors.join("\n"));
     }
 });

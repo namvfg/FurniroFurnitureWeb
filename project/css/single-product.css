@@ -1,11 +1,9 @@
-/* Cài đặt chung cho trang */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
 }
 
-/* Container chính của breadcrumb */
 .breadcrumb-container {
     background-color: #F9F1E7;
     padding: 38px 100px;
@@ -64,16 +62,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 4%;
-    /* Khoảng cách giữa 2 cột */
     padding: 50px 100px;
 }
 
-/* Cột trái: Hình ảnh */
 .product-gallery {
     display: flex;
     gap: 30px;
     flex: 0 0 55%;
-    /* Cột ảnh chiếm 55% */
     min-width: 320px;
 }
 
@@ -126,11 +121,8 @@ body {
     transform: scale(1.05);
 }
 
-
-/* Cột phải: Chi tiết */
 .product-details {
     flex: 0 0 41%;
-    /* Cột chi tiết chiếm 41% */
     min-width: 320px;
 }
 
@@ -228,7 +220,6 @@ body {
     gap: 18px;
     margin-top: 32px;
     align-items: center;
-    /* Căn chỉnh các nút thẳng hàng */
 }
 
 .quantity-selector {
@@ -377,7 +368,6 @@ body {
     transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
-/* Class để ẩn sản phẩm khi chuyển trang */
 .product-card.hidden {
     opacity: 0;
     transform: scale(0.95);
@@ -416,7 +406,6 @@ body {
     font-weight: 500;
 }
 
-/* Thêm class .sale cho badge giảm giá */
 .badge.sale {
     background-color: #E97171;
 }
