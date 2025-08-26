@@ -699,7 +699,6 @@ body {
 @media (max-width: 768px) {
     body {
         width: 100%;
-        padding-left: 5px;
     }
 
     .gallery-grid {
