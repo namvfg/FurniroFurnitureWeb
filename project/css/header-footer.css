@@ -282,4 +282,8 @@
     .footer-info__title {
         margin-bottom: 10px;
     }
+
+    .newsletter {
+        margin-right: 0px;
+    }
 }
