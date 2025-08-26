@@ -409,6 +409,18 @@
 
 <!-- Script -->
 <script src="./js/home.js"></script>
-<script src="./js/header-footer.js"></script>
+<script>
+    const toggle = (classSelector, hiddenClass = "hidden") => {
+        $(classSelector).toggleClass(hiddenClass);
+    };
+
+    $(document).on("click", ".left-options", () => {
+        toggle(".navigators");
+    });
+
+    $(document).on("click", ".right-options", () => {
+        toggle(".tools");
+    });
+</script>
 
 </html>
