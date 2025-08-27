@@ -1,55 +1,53 @@
 $(function () {
     const productsData = [
-        { name: 'Syltherine', description: 'Stylish cafe chair', price: 2500000, oldPrice: 3500000, image: '../images/Syltherine.png', badgeType: 'sale', badgeText: '-30%' },
-        { name: 'Leviosa', description: 'Stylish cafe chair', price: 2500000, oldPrice: null, image: '../images/Leviosa.png', badgeType: null, badgeText: null },
-        { name: 'Lolito', description: 'Luxury big sofa', price: 7000000, oldPrice: 14000000, image: '../images/Lolito.png', badgeType: 'sale', badgeText: '-50%' },
-        { name: 'Respira', description: 'Outdoor bar table', price: 500000, oldPrice: null, image: '../images/Respira.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 1500000, oldPrice: null, image: '../images/Grifo.png', badgeType: null, badgeText: null },
-        { name: 'Muggo', description: 'Small mug', price: 150000, oldPrice: null, image: '../images/Muggo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Pingky', description: 'Cute bed set', price: 7000000, oldPrice: 14000000, image: '../images/Pingky.png', badgeType: 'sale', badgeText: '-50%' },
-        { name: 'Potty', description: 'Minimalist flower pot', price: 500000, oldPrice: null, image: '../images/Potty.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Respira', description: 'Description', price: 500000, oldPrice: null, image: '../images/Respira.png', badgeType: null, badgeText: null },
-        { name: 'Syltherine', description: 'Stylish cafe chair', price: 2500000, oldPrice: 3500000, image: '../images/Syltherine.png', badgeType: 'sale', badgeText: '-30%' },
-        { name: 'Leviosa', description: 'Stylish cafe chair', price: 2500000, oldPrice: null, image: '../images/Leviosa.png', badgeType: null, badgeText: null },
-        { name: 'Lolito', description: 'Luxury big sofa', price: 7000000, oldPrice: 14000000, image: '../images/Lolito.png', badgeType: 'sale', badgeText: '-50%' },
-        { name: 'Respira', description: 'Outdoor bar table', price: 500000, oldPrice: null, image: '../images/Respira.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Pingky', description: 'Cute bed set', price: 7000000, oldPrice: 14000000, image: '../images/Pingky.png', badgeType: 'sale', badgeText: '-50%' },
-        { name: 'Potty', description: 'Minimalist flower pot', price: 500000, oldPrice: null, image: '../images/Potty.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 1500000, oldPrice: null, image: '../images/Grifo.png', badgeType: null, badgeText: null },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Grifo', description: 'Night lamp', price: 2000000, oldPrice: null, image: '../images/Grifo.png', badgeType: 'new', badgeText: 'New' },
-        { name: 'Pingky', description: 'Cute bed set', price: 7000000, oldPrice: 14000000, image: '../images/Pingky.png', badgeType: 'sale', badgeText: '-50%' },
-        { name: 'Lolito', description: 'Luxury big sofa', price: 7000000, oldPrice: 14000000, image: '../images/Lolito.png', badgeType: 'sale', badgeText: '-50%' },
-        { name: 'Leviosa', description: 'Stylish cafe chair', price: 2500000, oldPrice: null, image: '../images/Leviosa.png', badgeType: null, badgeText: null },
+       { id: 1, name: 'New Chair', description: 'Comfortable office chair', price: 'Rp 1.200.000', oldPrice: null, image: '../images/Potty.png', badge: { type: 'new', text: 'New' } },
+        { id: 2, name: 'Modern Lamp', description: 'Bright desk lamp', price: 'Rp 3.000.000', oldPrice: 'Rp 4.000.000', image: '../images/Leviosa.png', badge: { type: 'sale', text: '-25%' } },
+        { id: 3, name: 'Wooden Table', description: 'Solid oak dining table', price: 'Rp 8.500.000', oldPrice: null, image: '../images/Lolito.png', badge: null },
+        { id: 4, name: 'Soft Carpet', description: 'Fluffy living room carpet', price: 'Rp 450.000', oldPrice: null, image: '../images/Respira.png', badge: { type: 'new', text: 'New' } },
+        { id: 5, name: 'Bookshelf', description: 'Large capacity bookshelf', price: 'Rp 2.100.000', oldPrice: null, image: '../images/Grifo.png', badge: null },
+        { id: 6, name: 'Kitchen Set', description: 'Complete knife set', price: 'Rp 900.000', oldPrice: 'Rp 1.500.000', image: '../images/Pingky.png', badge: { type: 'sale', text: '-40%' } },
+        { id: 7, name: 'Sofa Bed', description: 'Convertible sofa bed', price: 'Rp 6.500.000', oldPrice: null, image: '../images/Potty.png', badge: null },
+        { id: 8, name: 'Vase', description: 'Elegant flower vase', price: 'Rp 750.000', oldPrice: null, image: '../images/Muggo.png', badge: { type: 'new', text: 'New' } },
+        { id: 9, name: 'New Chair', description: 'Comfortable office chair', price: 'Rp 1.200.000', oldPrice: null, image: '../images/Potty.png', badge: { type: 'new', text: 'New' } },
+        { id: 10, name: 'Modern Lamp', description: 'Bright desk lamp', price: 'Rp 3.000.000', oldPrice: 'Rp 4.000.000', image: '../images/Leviosa.png', badge: { type: 'sale', text: '-25%' } },
+        { id: 11, name: 'Wooden Table', description: 'Solid oak dining table', price: 'Rp 8.500.000', oldPrice: null, image: '../images/Lolito.png', badge: null },
+        { id: 12, name: 'Soft Carpet', description: 'Fluffy living room carpet', price: 'Rp 450.000', oldPrice: null, image: '../images/Respira.png', badge: { type: 'new', text: 'New' } },
+        { id: 13, name: 'Bookshelf', description: 'Large capacity bookshelf', price: 'Rp 2.100.000', oldPrice: null, image: '../images/Grifo.png', badge: null },
+        { id: 14, name: 'Kitchen Set', description: 'Complete knife set', price: 'Rp 900.000', oldPrice: 'Rp 1.500.000', image: '../images/Pingky.png', badge: { type: 'sale', text: '-40%' } },
+        { id: 15, name: 'Sofa Bed', description: 'Convertible sofa bed', price: 'Rp 6.500.000', oldPrice: null, image: '../images/Potty.png', badge: null },
+        { id: 16, name: 'Vase', description: 'Elegant flower vase', price: 'Rp 750.000', oldPrice: null, image: '../images/Muggo.png', badge: { type: 'new', text: 'New' } },{ id: 9, name: 'New Chair', description: 'Comfortable office chair', price: 'Rp 1.200.000', oldPrice: null, image: '../images/Potty.png', badge: { type: 'new', text: 'New' } },
+        { id: 17, name: 'Modern Lamp', description: 'Bright desk lamp', price: 'Rp 3.000.000', oldPrice: 'Rp 4.000.000', image: '../images/Leviosa.png', badge: { type: 'sale', text: '-25%' } },
+        { id: 18, name: 'Wooden Table', description: 'Solid oak dining table', price: 'Rp 8.500.000', oldPrice: null, image: '../images/Lolito.png', badge: null },
+        { id: 19, name: 'Soft Carpet', description: 'Fluffy living room carpet', price: 'Rp 450.000', oldPrice: null, image: '../images/Respira.png', badge: { type: 'new', text: 'New' } },
+        { id: 20, name: 'Bookshelf', description: 'Large capacity bookshelf', price: 'Rp 2.100.000', oldPrice: null, image: '../images/Grifo.png', badge: null },
+        { id: 21, name: 'Kitchen Set', description: 'Complete knife set', price: 'Rp 900.000', oldPrice: 'Rp 1.500.000', image: '../images/Pingky.png', badge: { type: 'sale', text: '-40%' } },
+        { id: 22, name: 'Sofa Bed', description: 'Convertible sofa bed', price: 'Rp 6.500.000', oldPrice: null, image: '../images/Potty.png', badge: null },
+        { id: 23, name: 'Vase', description: 'Elegant flower vase', price: 'Rp 750.000', oldPrice: null, image: '../images/Muggo.png', badge: { type: 'new', text: 'New' } }
     ];
 
     function createProductCardHTML(product) {
-        const formattedPrice = `Rp ${product.price.toLocaleString('id-ID')}`;
-        const oldPriceHTML = product.oldPrice ? `<span class="old-price">Rp ${product.oldPrice.toLocaleString('id-ID')}</span>` : '';
-        const badgeHTML = product.badgeType ? `<div class="badge ${product.badgeType}">${product.badgeText}</div>` : '';
+        const badgeHTML = product.badge
+            ? `<div class="badge ${product.badge.type}">${product.badge.text}</div>`
+            : '';
+
+        const oldPriceHTML = product.oldPrice ? `<span class="old-price">${product.oldPrice}</span>` : '';
+
+        const productComparison = "other-pages/product-comparison.html";
+
         return `
-            <div class="product-card">
+            <div class="product-card added-product"> 
                 <div class="product-image">
                     <img src="${product.image}" alt="${product.name}">
                     ${badgeHTML}
                     <div class="product-overlay">
                         <button>Add to cart</button>
-                        <div class="overlay-actions"><span>⇆ Share</span><span>⇄ Compare</span><span>♡ Like</span></div>
+                        <div class="overlay-actions"><span>⇆ Share</span><span><a href="${productComparison}">⇄ Compare</a></span><span>♡ Like</span></div>
                     </div>
                 </div>
                 <div class="product-info">
                     <div class="product-title">${product.name}</div>
                     <div class="product-description">${product.description}</div>
-                    <div class="product-price">${formattedPrice} ${oldPriceHTML}</div>
+                    <div class="product-price">${product.price} ${oldPriceHTML}</div>
                 </div>
             </div>
         `;
